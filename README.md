@@ -13,17 +13,17 @@
 | [DSO](https://github.com/JakobEngel/dso) | monocular | https://github.com/JakobEngel/dso |
 | [DTSLAM](https://github.com/plumonito/dtslam) | monocular | https://github.com/plumonito/dtslam |
 | [REBVO](https://github.com/JuanTarrio/rebvo) | monocular | https://github.com/JuanTarrio/rebvo | 
+| [COSLAM](http://drone.sjtu.edu.cn/dpzou/project/coslam.php) | multi-camera | http://drone.sjtu.edu.cn/dpzou/project/coslam.php | 
+| [OKVIS](https://github.com/ethz-asl/okvis) | multi-camera+IMU | https://github.com/ethz-asl/okvis | 
+| [ROVIO](https://github.com/ethz-asl/rovio) | multi-camera+IMU | https://github.com/ethz-asl/rovio | 
 | [RTAB-MAP](https://github.com/introlab/rtabmap) | multi-camera/RGB-D | http://wiki.ros.org/rtabmap_ros |
 | [DTAM](https://github.com/anuranbaka/OpenDTAM) | RGB-D | https://github.com/anuranbaka/OpenDTAM | 
 | [DVO](https://github.com/tum-vision/dvo_slam) | RGB-D | https://github.com/tum-vision/dvo_slam |
 | [RGBD-SLAM-V2](https://github.com/felixendres/rgbdslam_v2) | RGB-D | https://github.com/felixendres/rgbdslam_v2 |
 | [Elastic Fusion](https://github.com/mp3guy/ElasticFusion) | RGB-D | https://github.com/mp3guy/ElasticFusion | 
-| [OKVIS](https://github.com/ethz-asl/okvis) | multi-camera　+　IMU | https://github.com/ethz-asl/okvis | 
-| [ROVIO](https://github.com/ethz-asl/rovio) | multi-camera　+　IMU | https://github.com/ethz-asl/rovio | 
-| [COSLAM](http://drone.sjtu.edu.cn/dpzou/project/coslam.php) | multi-camera | http://drone.sjtu.edu.cn/dpzou/project/coslam.php | 
 | [RBPF-SLAM](http://www.mrpt.org/tutorials/slam-algorithms/rbpf-slam_algorithms/) | laser |http://www.mrpt.org/tutorials/slam-algorithms/rbpf-slam_algorithms/ |
 | [Hector SLAM](https://wiki.ros.org/hector_slam) | laser | https://wiki.ros.org/hector_slam |
-| [GMapping](https://wiki.ros.org/gmapping) | laser | https://wiki.ros.org/gmapping |
+| [GMapping](https://wiki.ros.org/gmapping) | laser+odom | https://wiki.ros.org/gmapping |
 | [Cartographer](https://github.com/googlecartographer/cartographer) | laser+imu | http://wiki.ros.org/cartographer |
 
 
