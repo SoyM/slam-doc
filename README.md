@@ -26,10 +26,9 @@
 | [GMapping](https://wiki.ros.org/gmapping) | laser+odom | https://wiki.ros.org/gmapping |
 | [Cartographer](https://github.com/googlecartographer/cartographer) | laser+imu | http://wiki.ros.org/cartographer |
 
-### openslam
+[openslam](https://openslam-org.github.io/)
 
-https://openslam-org.github.io/
+## Calibration
 
-## calibration
-* [calibrate](calibrate.md)
-  * [kalibr](kalibr.md)
+* [Calibrate](calibrate.md)
+  * [Kalibr](kalibr.md)
