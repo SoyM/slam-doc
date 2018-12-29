@@ -36,8 +36,11 @@
 
 * kalibr_calibrate_imu_camera --cam chain.yaml --target aprilgrid_6x6.yaml --imu imu0.yaml --bag dynamic.bag --time-calibration
 
-
 https://github.com/ethz-asl/maplab/wiki/Initial-sensor-calibration-with-Kalibr
+
+## Get config
+
+https://github.com/ethz-asl/kalibr/tree/master/aslam_offline_calibration/kalibr/python/exporters
 
 rosrun kalibr kalibr_maplab_config --to-ncamera \
     --label <your_label> \
