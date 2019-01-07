@@ -40,8 +40,10 @@ https://github.com/ethz-asl/maplab/wiki/Initial-sensor-calibration-with-Kalibr
 
 ## Get config
 
+There are many tools to generate config for popular slam algorithm.
+
 https://github.com/ethz-asl/kalibr/tree/master/aslam_offline_calibration/kalibr/python/exporters
 
-rosrun kalibr kalibr_maplab_config --to-ncamera \
-    --label <your_label> \
-    --cam <your_cam_chain_yaml>
+example:
+
+`rosrun kalibr kalibr_maplab_config --to-ncamera --label <your_label> --cam <your_cam_chain_yaml>`
