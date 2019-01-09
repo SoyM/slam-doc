@@ -2,7 +2,12 @@
 
 ## imu
 
-[IMU-Noise-Model](https://github.com/ethz-asl/kalibr/wiki/IMU-Noise-Model)
+[IMU-Noise-Model](https://github.com/ethz-asl/kalibr/wiki/IMU-Noise-Model):
+
+* Additive "White Noise"
+* Bias
+
+This has some nice utility scripts and packages that allow for calculation of the noise values for use in both kalibr and IMU filters.
 
 https://github.com/rpng/kalibr_allan
 
