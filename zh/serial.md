@@ -107,3 +107,132 @@ int set_opt(int fd, int nSpeed, int nBits, char nEvent, int nStop)
 }
 ```
 
+## 读取串口
+
+```c++
+// 固定 读取指定个数的数据 & ctrl + c 退出处理
+ssize_t uart::safe_read(char *vptr, size_t n) {
+  size_t nleft;
+  ssize_t nread;
+  char *ptr;
+
+  ptr = vptr;
+  nleft = n;
+
+  while (nleft > 0) {
+    if ((nread = read(_fd, ptr, nleft)) < 0) {
+      // Interrupted system call
+      if (errno == EINTR) {
+        printf("(closed)(safe_read) uart");
+        close(_fd);
+        exit(-1);
+      } else {
+        printf("system errors!!");
+        return -1;
+      }
+    } else if (nread == 0) {
+      printf("can't read anything");
+      break;
+    }
+    nleft -= nread;
+    ptr += nread;
+  }
+  return (n - nleft);
+}
+
+ssize_t uart::uart_read(char *r_buf, size_t len) {
+  ssize_t cnt = 0;
+  fd_set rfds;
+  struct timeval time;
+
+  // ctrl+c exit
+  if (errno == EINTR) {
+    printf("(closed)(uart_read) uart");
+    close(_fd);
+    exit(-1);
+  }
+
+  /*将文件描述符加入读描述符集合*/
+  FD_ZERO(&rfds);
+  FD_SET(_fd, &rfds);
+
+  time.tv_sec = 1;
+  time.tv_usec = 0;
+
+  /*实现串口的多路I/O*/
+  ret = select(_fd + 1, &rfds, NULL, NULL, &time);
+
+  switch (ret) {
+  case -1:
+    printf("(uart_read) select error!\n");
+    if (errno == EINTR) {
+      printf("(closed)(uart_read)");
+      close(_fd);
+      exit(-1);
+    }
+    return -1;
+
+  case 0:
+    printf("(uart_read) time over!\n");
+    return -1;
+
+  default:
+    cnt = safe_read(r_buf, len);
+    if (cnt == -1) {
+      printf("(fail)(uart_read) \n");
+      return -1;
+    }
+    return cnt;
+  }
+}
+```
+
+## 写入串口
+
+```c++
+ssize_t uart::safe_write(const char *vptr, size_t n) {
+  size_t nleft;
+  ssize_t nwritten;
+  const char *ptr;
+
+  ptr = vptr;
+  nleft = n;
+
+  while (nleft > 0) {
+    if (errno == EINTR) {
+      printf("(closed)(safe_write) uart");
+      close(_fd);
+      exit(-1);
+    }
+    if ((nwritten = write(_fd, ptr, nleft)) <= 0) {
+
+      nleft -= nwritten;
+      ptr += nwritten;
+      return n;
+    }
+  }
+}
+
+ssize_t uart::uart_write(const char *w_buf, size_t len) {
+  ssize_t cnt = 0;
+
+  cnt = safe_write(w_buf, len);
+  if (errno == EINTR) {
+    printf("(uart_write) closed");
+    close(_fd);
+    exit(-1);
+  }
+  if (cnt == -1) {
+    printf("(fail)uart write\n");
+    return -1;
+  }
+
+  return cnt;
+}
+```
+
+## 关闭串口
+
+```c++
+close(_fd);
+```
