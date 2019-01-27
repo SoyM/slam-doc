@@ -32,3 +32,8 @@
 
 * [Calibrate](calibrate.md)
   * [Kalibr](kalibr.md)
+  
+## Visual slam
+
+### bundle adjustment
+
