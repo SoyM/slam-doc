@@ -1,9 +1,11 @@
 # SLAM-Doc
 
+![mindMapping.jpg](mindMapping.jpg "author: https://www.zhihu.com/people/ding-wen-dong-62/activities")
+
 ## OpenSource-SLAM
 
-| Project | Sensor | Link | 
-| ------------  | -------- | --- | 
+| Project | Sensor | Link |
+| ------------  | -------- | --- |
 | [MonoSLAM](https://github.com/hanmekim/SceneLib2) | monocular | https://github.com/hanmekim/SceneLib2 |  |
 | [PTAM](https://www.robots.ox.ac.uk/~gk/PTAM) | monocular | http://wiki.ros.org/ethzasl_ptam/ptam/ |
 | [ORB-SLAM](http://webdiis.unizar.es/~raulmur/orbslam) | monocular | http://webdiis.unizar.es/~raulmur/orbslam |
@@ -36,4 +38,3 @@
 ## Visual slam
 
 ### bundle adjustment
-
