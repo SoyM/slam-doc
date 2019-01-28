@@ -38,3 +38,7 @@
 ## Visual slam
 
 ### bundle adjustment
+
+#### Eigen
+
+#### Sophus
