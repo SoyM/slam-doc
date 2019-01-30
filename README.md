@@ -36,8 +36,13 @@
   
 ## Visual slam
 
-### bundle adjustment
+### General Graph Optimization([g2o](https://github.com/RainerKuemmerle/g2o))
+A General Framework for Graph Optimization.
 
-#### Eigen
+#### bundle adjustment
 
-#### Sophus
+##### [Sophus](https://github.com/strasdat/Sophus)
+
+C++ implementation of Lie Groups using Eigen.
+
+###### [Eigen](http://eigen.tuxfamily.org)
