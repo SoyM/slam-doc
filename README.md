@@ -1,6 +1,7 @@
 # SLAM-Doc
 
 ![mindMapping.jpg](mindMapping.jpg "author: https://www.zhihu.com/people/ding-wen-dong-62/activities")
+[openslam](https://openslam-org.github.io/), [ROS](https://wiki.ros.org/)
 
 ## OpenSource-SLAM
 
@@ -27,8 +28,6 @@
 | [Hector SLAM](https://wiki.ros.org/hector_slam) | laser | https://wiki.ros.org/hector_slam |
 | [GMapping](https://wiki.ros.org/gmapping) | laser+odom | https://wiki.ros.org/gmapping |
 | [Cartographer](https://github.com/googlecartographer/cartographer) | laser+imu | http://wiki.ros.org/cartographer |
-
-[openslam](https://openslam-org.github.io/)
 
 ## Calibration
 
