@@ -34,15 +34,20 @@
 * [Calibrate](calibrate.md)
   * [Kalibr](kalibr.md)
   
-## Visual slam
+## Solver
+* EKF:ExtendedKalmanFilter
+* ICP:Iterative Closest Point
+* RBPF:Rao-Blackwellized Particle Filter 
+* graphSLAM
+ 
 
-### General Graph Optimization([g2o](https://github.com/RainerKuemmerle/g2o))
+## General Graph Optimization([g2o](https://github.com/RainerKuemmerle/g2o))
 A General Framework for Graph Optimization.
 
-#### bundle adjustment
+### bundle adjustment
 
-##### [Sophus](https://github.com/strasdat/Sophus)
+#### [Sophus](https://github.com/strasdat/Sophus)
 
 C++ implementation of Lie Groups using Eigen.
 
-###### [Eigen](http://eigen.tuxfamily.org)
+**[Eigen](http://eigen.tuxfamily.org)**
