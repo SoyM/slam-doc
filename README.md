@@ -45,6 +45,7 @@
 A General Framework for Graph Optimization.
 
 ### bundle adjustment
+[ceres-solver](http://www.ceres-solver.org/)
 
 #### [Sophus](https://github.com/strasdat/Sophus)
 
