@@ -29,3 +29,7 @@ C++ implementation of Lie Groups using Eigen.
 **[Eigen](http://eigen.tuxfamily.org)**
 
 ## [PCL](http://pointclouds.org/)
+
+## control theory
+
+PID
