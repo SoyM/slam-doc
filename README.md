@@ -33,3 +33,8 @@ C++ implementation of Lie Groups using Eigen.
 ## control theory
 
 PID
+
+## tools
+
+quaternion to euler
+https://quaternions.online/
