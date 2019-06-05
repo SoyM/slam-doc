@@ -8,3 +8,9 @@ https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/6/html/in
 
 ## disk io speed
 dd count=1000 bs=1M if=/dev/zero of=./test.img
+
+## Enable sudo without password 
+`sudo visudo`
+
+At the end of the /etc/sudoers file add this line:
+`username     ALL=(ALL) NOPASSWD:ALL`
