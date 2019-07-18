@@ -5,6 +5,8 @@
 
 [list of slam project](./slamRespository.md)
 
+http://www.probabilistic-robotics.org/
+
 ## Calibrations
 
 * [Calibrate](calibrate.md)
