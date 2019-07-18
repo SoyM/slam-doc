@@ -6,3 +6,6 @@ kdtree
 
 Bresenham's line algorithm
 * https://www.geeksforgeeks.org/bresenhams-line-generation-algorithm/
+
+Particle Filters
+* http://www.irisa.fr/aspi/legland/ref/arulampalam02a.pdf
