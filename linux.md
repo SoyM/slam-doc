@@ -13,4 +13,9 @@ dd count=1000 bs=1M if=/dev/zero of=./test.img
 `sudo visudo`
 
 At the end of the /etc/sudoers file add this line:
-`username     ALL=(ALL) NOPASSWD:ALL`
+
+All command
+  `<username>  ALL=(ALL) NOPASSWD:ALL`
+
+Custom command
+  `<username> ALL=(ALL) NOPASSWD:/usr/bin/nmcli,/bin/cat,/bin/systemctl`
